@@ -23,18 +23,6 @@ def compute_mlu_words(trees):
     mlu = total_words / len(trees) if trees else 0.0
     return mlu
 
-def compute_mlu_morphemes(trees, morphological_rules=None):
-    if morphological_rules is None:
-        morphological_rules = lambda token: 1
-
-    total_morphemes = 0
-    for t in trees:
-        tokens = t.leaves()
-        for token in tokens:
-            total_morphemes += morphological_rules(token)
-    mlu_morph = total_morphemes / len(trees) if trees else 0.0
-    return mlu_morph
-
 def compute_average_tree_depth(trees):
     if not trees:
         return 0.0
