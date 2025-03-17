@@ -108,3 +108,54 @@ def compute_thematic_roles(trees):
                 role_counter['EXPER'] += 1
             
     return role_counter
+
+### DEFINING DATA GROUPINGS
+
+files_by_group = {
+    "zeros": [
+        "soderstrom.parsed_trees.txt"
+    ],
+    "ones": [
+        "brown-eve+animacy+theta.parsed_trees.txt",
+        "bernstein-wh.parsed_trees.txt"
+    ],
+    "twos": [
+        "vanhouten-twos-wh.parsed_trees.txt",
+        "valian+animacy+theta.parsed_trees.txt"
+    ],
+    "threes": [
+        "vanhouten-threes-wh.parsed_trees.txt",
+        "vankleeck-wh.parsed_trees.txt",
+        "brown-adam3to4+animacy+theta.parsed_trees.txt",
+    ],
+    "fours": [
+        "brown-adam4up+animacy+theta.parsed_trees.txt"
+    ]
+}
+
+for group_name, file_list in files_by_group.items():
+  for f in file_list:
+    trees = load_trees_from_file(f)
+
+    print(f"Loaded {len(trees)} trees from {f}")
+
+    mlu_words = compute_mlu_words(trees)
+    print(f"Word-based MLU: {mlu_words:.2f}")
+
+    avg_depth = compute_average_tree_depth(trees)
+    print(f"Average Tree Depth: {avg_depth:.2f}")
+
+    sbar_stats = compute_subordinate_clause_stats(trees)
+    print(f"SBAR Stats: {sbar_stats}")
+
+    pos_counts = compute_pos_frequencies(trees)
+    print(f"POS Frequencies (top 5): {pos_counts.most_common(5)}")
+
+    ttr = compute_ttr(trees)
+    print(f"Type-Token Ratio: {ttr:.3f}")
+
+    wh_count = compute_wh_question_stats(trees)
+    print(f"Total WH-phrases: {wh_count}")
+
+    role_counts = compute_thematic_roles(trees)
+    print(f"Thematic Role Counts: {role_counts}")
