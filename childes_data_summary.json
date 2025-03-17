@@ -1,0 +1,146 @@
+[
+    {
+        "file": "soderstrom.parsed_trees.txt",
+        "utterances": 24131,
+        "mlu": 4.99,
+        "avg_depth": 6.03,
+        "sbar_stats": {
+            "total_sbar": 1577,
+            "utterances_with_sbar": 1418,
+            "proportion_of_utterances_with_sbar": 0.05876258754299449
+        },
+        "pos_top5": [[".", 23553], ["PRP", 13400], ["UH", 11555], ["VB", 9667], ["NN", 8351]],
+        "ttr": 0.037,
+        "wh_phrases": 2279,
+        "thematic_roles": {},
+        "group": "zeros"
+    },
+    {
+        "file": "brown-eve+animacy+theta.parsed_trees.txt",
+        "utterances": 14221,
+        "mlu": 5.78,
+        "avg_depth": 6.71,
+        "sbar_stats": {
+            "total_sbar": 604,
+            "utterances_with_sbar": 575,
+            "proportion_of_utterances_with_sbar": 0.0404331622248787
+        },
+        "pos_top5": [[".", 14039], ["PRP", 9130], ["NN", 8460], ["VB-<V1>", 4620], ["DT", 3997]],
+        "ttr": 0.024,
+        "wh_phrases": 2834,
+        "thematic_roles": {"AGENT": 3725, "PATIENT": 3486, "EXPER": 1369},
+        "group": "ones"
+    },
+    {
+        "file": "bernstein-wh.parsed_trees.txt",
+        "utterances": 1724,
+        "mlu": 5.77,
+        "avg_depth": 7.39,
+        "sbar_stats": {
+            "total_sbar": 249,
+            "utterances_with_sbar": 229,
+            "proportion_of_utterances_with_sbar": 0.132830626450116
+        },
+        "pos_top5": [[".", 1661], ["WP", 1312], ["NN", 1226], ["COP", 1071], ["PRP", 724]],
+        "ttr": 0.058,
+        "wh_phrases": 1724,
+        "thematic_roles": {},
+        "group": "ones"
+    },
+    {
+        "file": "vanhouten-twos-wh.parsed_trees.txt",
+        "utterances": 397,
+        "mlu": 5.59,
+        "avg_depth": 7.43,
+        "sbar_stats": {
+            "total_sbar": 72,
+            "utterances_with_sbar": 72,
+            "proportion_of_utterances_with_sbar": 0.181360201511335
+        },
+        "pos_top5": [[".", 393], ["NN", 267], ["WP", 238], ["VB", 197], ["COP", 181]],
+        "ttr": 0.099,
+        "wh_phrases": 388,
+        "thematic_roles": {},
+        "group": "twos"
+    },
+    {
+        "file": "valian+animacy+theta.parsed_trees.txt",
+        "utterances": 25550,
+        "mlu": 6.36,
+        "avg_depth": 6.92,
+        "sbar_stats": {
+            "total_sbar": 1609,
+            "utterances_with_sbar": 1508,
+            "proportion_of_utterances_with_sbar": 0.05902152641878669
+        },
+        "pos_top5": [[".", 24849], ["PRP", 17159], ["NN", 16247], ["DT", 8522], ["COP", 7295]],
+        "ttr": 0.024,
+        "wh_phrases": 6143,
+        "thematic_roles": {"PATIENT": 5702, "AGENT": 5429, "EXPER": 4154},
+        "group": "twos"
+    },
+    {
+        "file": "vanhouten-threes-wh.parsed_trees.txt",
+        "utterances": 1415,
+        "mlu": 6.86,
+        "avg_depth": 8.13,
+        "sbar_stats": {
+            "total_sbar": 364,
+            "utterances_with_sbar": 336,
+            "proportion_of_utterances_with_sbar": 0.23745583038869258
+        },
+        "pos_top5": [[".", 1384], ["PRP", 1050], ["VB", 1018], ["WP", 974], ["NN", 789]],
+        "ttr": 0.041,
+        "wh_phrases": 1479,
+        "thematic_roles": {},
+        "group": "threes"
+    },
+    {
+        "file": "vankleeck-wh.parsed_trees.txt",
+        "utterances": 1675,
+        "mlu": 6.53,
+        "avg_depth": 7.86,
+        "sbar_stats": {
+            "total_sbar": 319,
+            "utterances_with_sbar": 301,
+            "proportion_of_utterances_with_sbar": 0.17970149253731343
+        },
+        "pos_top5": [[".", 1664], ["PRP", 1328], ["WP", 1188], ["VB", 1057], ["NN", 834]],
+        "ttr": 0.062,
+        "wh_phrases": 1711,
+        "thematic_roles": {},
+        "group": "threes"
+    },
+    {
+        "file": "brown-adam3to4+animacy+theta.parsed_trees.txt",
+        "utterances": 10965,
+        "mlu": 6.37,
+        "avg_depth": 7.04,
+        "sbar_stats": {
+            "total_sbar": 798,
+            "utterances_with_sbar": 754,
+            "proportion_of_utterances_with_sbar": 0.06876424988600091
+        },
+        "pos_top5": [[".", 10765], ["PRP", 7916], ["NN", 7168], ["DT", 3759], ["VB-<V1>", 3489]],
+        "ttr": 0.036,
+        "wh_phrases": 3026,
+        "thematic_roles": {"AGENT": 3113, "PATIENT": 3074, "EXPER": 1642},
+        "group": "threes"
+    },
+    {
+        "file": "brown-adam4up+animacy+theta.parsed_trees.txt",
+        "utterances": 5724,
+        "mlu": 6.62,
+        "avg_depth": 7.16,
+        "sbar_stats": {
+            "total_sbar": 421,
+            "utterances_with_sbar": 403,
+            "proportion_of_utterances_with_sbar": 0.07040531097134871
+        },
+        "pos_top5": [[".", 5619], ["PRP", 4375], ["NN", 3748], ["DT", 2035], ["VB-<V1>", 1910]],
+        "ttr": 0.049,
+        "wh_phrases": 1424,
+        "thematic_roles": {"PATIENT": 1767, "AGENT": 1710, "EXPER": 969},
+        "group": "fours"
+    }
+]
